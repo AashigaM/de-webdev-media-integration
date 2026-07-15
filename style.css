@@ -1,0 +1,202 @@
+/* Main webpage style */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #e6f0fa;
+    color: #2b3e50;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Header design */
+header {
+    text-align: center;
+    background-color: #6883ba;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.shortcut-links {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Changes link appearance */
+.shortcut-links a {
+    color: #e6f0fa;
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.shortcut-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Centers and limits the page content */
+main {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* Creates card style sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #3b5998;
+    border-bottom: 2px solid #bcd4de;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #4a6fa5;
+    margin-top: 0;
+}
+
+/* Allows text to wrap around the image */
+.text-wrap {
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Main image formatting */
+.side-img {
+    float: left;
+    width: 220px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    border: 3px solid #bcd4de;
+    border-radius: 6px;
+    padding: 4px;
+}
+
+.text-wrap p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+/* Thumbnail image box */
+.thumbnail-box {
+    clear: both;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f7fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.thumbnail-pic {
+    width: 110px;
+    height: auto;
+    border: 2px dashed #6883ba;
+    border-radius: 4px;
+    padding: 3px;
+    display: block;
+}
+
+/* Makes image slightly transparent when hovered */
+.thumbnail-pic:hover {
+    opacity: 0.85;
+}
+
+/* Organizes extra pictures in a row */
+.extra-pics {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 25px;
+}
+
+.gallery-item {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Controls gallery image size */
+.gallery-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 3px solid #bcd4de;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-size: 0.85em;
+    color: #778899;
+    font-style: italic;
+    margin-top: 8px;
+    max-width: 180px;
+}
+
+.thumbnail-box figcaption {
+    max-width: 100%;
+}
+
+/* Credit text styling */
+.credits {
+    font-size: 0.8em;
+    color: #94a3b8;
+    margin-top: 4px;
+}
+
+/* Media section for audio and video */
+.media-container {
+    background-color: #f0f4f8;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 6px;
+}
+
+audio, video {
+    margin-top: 10px;
+    display: block;
+}
+
+/* Custom bullet list style - Fixed for sizing */
+.custom-list-container {
+    clear: both; /* Prevents layout issues with floated elements */
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7fafc;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.custom-list-container ul {
+    list-style-type: none; 
+    padding-left: 20px;
+}
+
+.custom-list-container li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Custom Bullet List */
+.custom-list-container li::before {
+    content: "✰"; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4a6fa5; 
+    font-size: 1.2rem;
+}
