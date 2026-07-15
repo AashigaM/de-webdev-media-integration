@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Basic page information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Module 4: Working with Media</title>
+
+    <!-- Imports a Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Links the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Page header -->
+    <header>
+        <h1>Module 4: Working with Media</h1>
+        <p>A simple showcase of beautiful blue nature elements.</p>
+      
+      
+
+        <!-- Navigation links -->
+        <nav class="shortcut-links">
+            <a href="#visuals">Image Showcase</a> |
+            <a href="#multimedia">Audio &amp; Video Streams</a>
+        </nav>
+    </header>
+
+    <!-- Main page content -->
+    <main>
+
+        <!-- Images section -->
+        <section id="visuals">
+            <h2>Image Showcase</h2>
+
+            <div class="text-wrap">
+                <img src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/💙.jpeg"
+                     alt="Beautiful blue mountains and a field of purple flowers"
+                     class="side-img"
+                     title="Blue Mountains JPG">
+
+                <p><strong>Mountain Landscape (JPEG/JPG File Format):</strong> For this part of my media page, I wanted to show how an image can wrap around text using CSS. I floated the image to the <strong>left</strong> with the <code>float: left;</code> property so the text flows beside it instead of pushing everything underneath the picture right away.</p>
+
+<p>I also split the description into multiple paragraphs so it's easier to see how the text wraps around the image. This creates a cleaner layout and makes the page look more organized while keeping the picture next to the information being described. Using a float is a simple way to position images without needing more advanced layout tools.</p>
+
+<p>As more text is added, the browser continues placing each line next to the image until it reaches the bottom of the picture. After there is no more vertical space available, the remaining text automatically moves underneath the image. This behavior helps demonstrate how floating images affect the layout of a webpage and how surrounding content adjusts itself automatically.</p>
+                  
+                  <div class="custom-list-container">
+    <h3>Key Takeaways on Image Formats</h3>
+    <ul>
+        <li>JPEG images are ideal for photographs with deep gradients.</li>
+        <li>PNG files preserve crisp digital lines and allow background transparency.</li>
+        <li>GIFs bring short, looping animations to life.</li>
+    </ul>
+</div>
+</div>
+
+               
+            </div>
+
+            <!-- Clickable thumbnail -->
+            <div class="thumbnail-box">
+                <h3>Resized Image Link (Click to view original)</h3>
+
+                <figure>
+                    <a href="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/💙.jpeg" target="_blank">
+                        <img src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/💙.jpeg"
+                             alt="Small view of the mountain landscape"
+                             class="thumbnail-pic">
+                    </a>
+
+                    <figcaption>Figure 1: This is a smaller version of the original JPEG image. Click the thumbnail to view the full-size picture.</figcaption>
+                </figure>
+
+                <p class="credits"><em>Image Source: Image by Yoona Park via Pinterest.</em></p>
+            </div>
+
+            <!-- PNG and GIF images -->
+            <div class="extra-pics">
+
+                <figure class="gallery-item">
+                    <img src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/Screenshot%202026-07-12%202.40.42%20PM.png"
+                         alt="Soft pastel clouds with a pixelated digital sky pattern"
+                         class="gallery-pic"
+                         title="Pastel Clouds PNG">
+
+                    <figcaption>Figure 2: This image uses the PNG file format, which is commonly used for digital artwork and graphics.</figcaption>
+
+                    <p class="credits"><em>Image Credit: LaiTique Sky Cloud Wallpaper via Amazon.</em></p>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/ocean%20with%20flowers.gif"
+                         alt="Sparkling deep blue water surface animation"
+                         class="gallery-pic"
+                         title="Sparkling Ocean GIF">
+
+                    <figcaption>Figure 3: This image is an animated GIF that continuously loops.</figcaption>
+
+                    <p class="credits"><em>Image Credit: GIF by MutantCornea on Pinterest.</em></p>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- Audio and video section -->
+        <section id="multimedia">
+            <h2>Audio and Video Streams</h2>
+
+            <p>Below are the required audio and video players with built-in browser controls.</p>
+
+            <!-- Audio player -->
+            <div class="media-container">
+                <h3>Ocean Waves Ambient Noise (.MP3)</h3>
+
+                <audio controls src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/ocean%20waves%20sound.mp3">
+                    Your browser does not support the audio element.
+                </audio>
+
+                <p class="credits"><em>Audio Credit: "Gentle ocean waves birdsong and gull" by freesound_community via Freesound.</em></p>
+            </div>
+
+            <!-- Video player -->
+            <div class="media-container">
+                <h3>Deep Sea Wave Motion (.MP4)</h3>
+
+                <video controls width="100%">
+                    <source src="https://codecraftworks.dev/web/8keAHJ65OITxaVwdRzSg/assets/65560-515098344_tiny.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+
+                <p class="credits"><em>Video Credit: Video by missdeena via Pixabay.</em></p>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
